@@ -27,7 +27,7 @@ function playGame() {
     let computerScore = 0
 
     // Declare function to play one round
-    function playRound(humanChoice, computerChoice) {
+    const playRound = (humanChoice, computerChoice) => {
         let newHumanChoice = humanChoice.toLowerCase();
         let message = "";
 
@@ -63,13 +63,13 @@ function playGame() {
 
     // Declare the winner
     if (humanScore > computerScore) {
-        console.log("You win!");
+        alert("You win!");
     }
     else if (humanScore < computerScore) {
-        console.log("Computer wins!");
+        alert("Computer wins!");
     }
     else {
-        console.log("Game ends in a tie!");
+        alert("Game ends in a tie!");
     }
 }
 
